@@ -11,7 +11,7 @@ public class TaskManagement {
             cs.setString(2, status);
             cs.execute();
 
-            System.out.println("✔ Thêm thành công");
+            System.out.println(" Thêm thành công");
 
         } catch (Exception e) {
             System.out.println( e.getMessage());
@@ -49,7 +49,7 @@ public class TaskManagement {
             cs.setString(2, status);
             cs.execute();
 
-            System.out.println("✔ Cập nhật thành công");
+            System.out.println(" Cập nhật thành công");
 
         } catch (Exception e) {
             System.out.println( e.getMessage());
@@ -104,8 +104,8 @@ public class TaskManagement {
              ResultSet rs = cs.executeQuery()) {
 
             if (rs.next()) {
-                System.out.println("✔ Đã hoàn thành: " + rs.getInt("completed"));
-                System.out.println("✔ Chưa hoàn thành: " + rs.getInt("not_completed"));
+                System.out.println(" Đã hoàn thành: " + rs.getInt("completed"));
+                System.out.println("Chưa hoàn thành: " + rs.getInt("not_completed"));
             }
 
         } catch (Exception e) {
